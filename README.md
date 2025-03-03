@@ -76,4 +76,4 @@ if __name__ == "__main__":
 ````
 
 ## Contoh Output
-![Output](Diagram_Dictionary.png)
+![Output](Screenshot 2025-03-04 022906.png)

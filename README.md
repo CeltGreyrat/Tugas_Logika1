@@ -76,4 +76,4 @@ if __name__ == "__main__":
 ````
 
 ## Contoh Output
-![Output](Screenshot 2025-03-04 022906.png)
+![Output](Output_logika.png)

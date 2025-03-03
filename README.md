@@ -76,27 +76,4 @@ if __name__ == "__main__":
 ````
 
 ## Contoh Output
-````
-=== Program Hitung Biaya Pengiriman ===
-1. Hitung Biaya Pengiriman
-2. Keluar
-Pilih menu (1/2): 1
-Masukkan berat paket (kg): 10
-Masukkan jarak pengiriman (km): 75
-Masukkan jenis pengiriman (biasa/express): express
-Apakah Anda member? (ya/tidak): ya
-Total biaya pengiriman: Rp 38700.0
-
-=== Program Hitung Biaya Pengiriman ===
-1. Hitung Biaya Pengiriman
-2. Keluar
-Pilih menu (1/2): 1
-Masukkan berat paket (kg): 4 
-Masukkan berat paket (kg): 4
-Masukkan jarak pengiriman (km): 8
-Masukkan jarak pengiriman (km): 8
-Masukkan jenis pengiriman (biasa/express): biasa
-Masukkan jenis pengiriman (biasa/express): biasa
-Apakah Anda member? (ya/tidak): ya
-Total biaya pengiriman: Rp 9000.0
-````
+![Output](Diagram_Dictionary.png)

@@ -1,0 +1,66 @@
+print("Naufal Rafi Haryanto")
+print ("312410118")
+print ("TI.24.A1")
+
+def hitung_biaya_pengiriman(berat, jarak, jenis_pengiriman, is_member):
+    # Biaya dasar
+    biaya = 10000
+
+    #tambahan_biaya_berat 
+    if berat > 5:
+        biaya += 5000
+
+    #Tambahan_jarak
+    if jarak > 10:
+        biaya += 8000
+    
+    #Tambahan_express
+    if jenis_pengiriman.lower() == 'express':
+        biaya += 20000
+
+    #Diskon_member
+    if is_member: 
+        diskon = 0.1 * biaya
+        biaya -= diskon
+    else:
+        biaya = biaya
+        
+    return biaya
+
+def main():
+    while True:
+        print("\n=== Program Hitung Biaya Pengiriman ===")
+        print("1. Hitung Biaya Pengiriman")
+        print("2. Keluar")
+        
+        pilihan = input("Pilih menu (1/2): ")
+        
+        if pilihan == '1':
+            # Input berat paket
+            berat_paket = float(input("Masukkan berat paket (kg): "))
+            
+            # Input jarak pengiriman
+            jarak_pengiriman = float(input("Masukkan jarak pengiriman (km): "))
+            
+            # Input jenis pengiriman
+            jenis_pengiriman = input("Masukkan jenis pengiriman (biasa/express): ").strip().lower()
+            
+            # Input status keanggotaan
+            is_member_input = input("Apakah Anda member? (ya/tidak): ").strip().lower()
+            is_member = True if is_member_input == 'ya' else False
+            
+            # Hitung total biaya
+            total_biaya = hitung_biaya_pengiriman(berat_paket, jarak_pengiriman, jenis_pengiriman, is_member)
+            
+            # Tampilkan hasil
+            print(f'Total biaya pengiriman: Rp {total_biaya}')
+        
+        elif pilihan == '2':
+            print("Terima kasih! Sampai jumpa.")
+            break
+        
+        else:
+            print("Pilihan tidak valid. Silakan pilih 1 atau 2.")
+
+if __name__ == "__main__":
+    main()
